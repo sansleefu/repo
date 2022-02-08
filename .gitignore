@@ -1,18 +1,24 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+.project
+.settings
+*~
+*.diff
+*.patch
+/*.html
+.DS_Store
+.bower.json
+.sizecache.json
+yarn.lock
+package-lock.json
 
-# Other files and folders
-.settings/
+npm-debug.log*
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Ignore everything in dist folder except for eslint config
+/dist/*
+!/dist/.eslintrc.json
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+/amd
+/external
+/node_modules
+
+/test/data/core/jquery-iterability-transpiled.js
+/test/data/qunit-fixture.js
